@@ -2,18 +2,14 @@ package dev.sterner.culturaldelights.common.registry;
 
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
-import vectorwing.farmersdelight.common.block.WildCropBlock;
 import vectorwing.farmersdelight.FarmersDelight;
 import vectorwing.farmersdelight.common.registry.ModBlocks;
 import dev.sterner.culturaldelights.common.block.*;
 import dev.sterner.culturaldelights.common.utils.Constants;
-import dev.sterner.culturaldelights.common.world.AvocadoPitGenerator;
-import dev.sterner.culturaldelights.common.world.AvocadoSaplingGenerator;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
-import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.block.*;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.BlockItem;

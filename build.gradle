@@ -20,6 +20,18 @@ repositories {
 		url "https://maven.terraformersmc.com"
 	}
 	maven { url 'https://www.cursemaven.com' }
+	maven {
+		name = "Greenhouse Maven"
+		url = 'https://repo.greenhouse.house/releases/'
+	}
+  	maven { url "https://mvn.devos.one/releases/" } // Porting Lib
+	maven {
+		name = "Greenhouse Maven (Snapshots)" // Temporary Porting Lib Fork for 1.21
+		url = 'https://repo.greenhouse.house/snapshots/'
+	}
+	maven {
+		url "https://jitpack.io/" // Fabric ASM
+	}
 }
 
 dependencies {
@@ -28,7 +40,11 @@ dependencies {
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	modImplementation "curse.maven:farmersdelightfabric-993166:${project.delight_version}" // Farmer's Delight sürümünü güncelle
+	//modImplementation "curse.maven:farmersdelightfabric-993166:${project.delight_version}" // Farmer's Delight sürümünü güncelle
+
+	modImplementation("vectorwing:FarmersDelight:${fdrf_version}") {
+		exclude(group: "net.fabricmc")
+	}
 
 	modImplementation include("com.terraformersmc.terraform-api:terraform-wood-api-v1:${project.terraform_wood_api_version}")
 }
