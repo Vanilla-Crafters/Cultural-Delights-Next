@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "culturaldelights",
+  "version": "${version}",
+
+  "name": "Cultural Delights Next",
+  "description": "Fabric port of Cultural Delights",
+  "authors": [
+    "MrSterner",
+    "sassan",
+    "NarHeur"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/Vanilla-Crafters/Cultural-Delights-Next"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/culturaldelights/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.sterner.culturaldelights.CulturalDelights"
+    ],
+    "client": [
+      "dev.sterner.culturaldelights.CulturalDelightsClient"
+    ]
+  },
+  "mixins": [
+    "culturaldelights.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric-api": "*",
+    "minecraft": ">=1.21",
+    "java": ">=17",
+    "farmersdelight": "*"
+  }
+}
