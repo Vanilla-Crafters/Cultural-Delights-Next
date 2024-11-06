@@ -26,7 +26,7 @@ public class ExoticRollMedleyBlock extends FeastBlock {
     public final List<Item> riceRollServings;
 
     public ExoticRollMedleyBlock() {
-        super(Settings.copy(Blocks.CAKE), (Supplier<Item>) CDObjects.TROPICAL_ROLL, true);
+        super(Settings.copy(Blocks.CAKE), () -> CDObjects.TROPICAL_ROLL, true);
         this.riceRollServings = Arrays.asList(
                 CDObjects.PUFFERFISH_ROLL,
                 CDObjects.PUFFERFISH_ROLL,

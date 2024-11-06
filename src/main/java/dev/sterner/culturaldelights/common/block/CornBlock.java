@@ -50,7 +50,7 @@ public class CornBlock extends PlantBlock implements Fertilizable {
     }
 
     @Override
-    protected boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
+    public boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
         return floor.isOf(Blocks.FARMLAND) || floor.isOf(ModBlocks.RICH_SOIL_FARMLAND.get());
     }
 

@@ -87,13 +87,13 @@ public class CulturalDelights implements ModInitializer {
 			if (source.isBuiltin() && SQUID_LOOT_TABLE_ID.equals(key)) {
 				LootPool.Builder poolBuilder = LootPool.builder()
 						.with(ItemEntry.builder(CDObjects.SQUID));
-				tableBuilder.pool(poolBuilder.build());
+				tableBuilder.pool(poolBuilder);
 			}
 
 			if (source.isBuiltin() && GLOW_SQUID_LOOT_TABLE_ID.equals(key)) {
 				LootPool.Builder poolBuilder = LootPool.builder()
 						.with(ItemEntry.builder(CDObjects.GLOW_SQUID));
-				tableBuilder.pool(poolBuilder.build());
+				tableBuilder.pool(poolBuilder);
 			}
 		});
 
