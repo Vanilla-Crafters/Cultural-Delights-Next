@@ -131,7 +131,13 @@ public class CDObjects {
     public static void init() {
         BLOCKS.keySet().forEach(block -> Registry.register(Registries.BLOCK, BLOCKS.get(block), block));
         ITEMS.keySet().forEach(item -> Registry.register(Registries.ITEM, ITEMS.get(item), item));
-        ItemGroupEvents.modifyEntriesEvent(RegistryKey.of(RegistryKeys.ITEM_GROUP, Identifier.of(FarmersDelight.MODID, "main"))).register(entries -> ITEMS.keySet().forEach(entries::add));
+
+        ItemGroupEvents.modifyEntriesEvent(
+                RegistryKey.of(
+                        RegistryKeys.ITEM_GROUP,
+                        Identifier.of(FarmersDelight.MODID, "main")
+                )
+        ).register(entries -> ITEMS.keySet().forEach(entries::add));
 
 
         FlammableBlockRegistry flammableRegistry = FlammableBlockRegistry.getDefaultInstance();

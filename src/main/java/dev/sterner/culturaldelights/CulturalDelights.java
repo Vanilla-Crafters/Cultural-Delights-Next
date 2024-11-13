@@ -45,9 +45,9 @@ public class CulturalDelights implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		CDObjects.init();
 		CDConfiguredFeatures.registerAll();
 		CDWorldGenerators.init();
+		CDObjects.init();
 
 		// Biome modifications
 		BiomeModifications.addFeature(
